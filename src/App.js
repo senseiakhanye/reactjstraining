@@ -16,15 +16,15 @@ function App() {
     age: 37
   }
 ]
-  const [personState, setPersonState] = useState({persons});
-  const swichNameHandler = (isName) => {
-    persons[0].name = isName;
-    setPersonState({
-      persons
-    })
-    console.log(personState.persons);
-    console.log("Changed but not updating");
-  }
+const [personState, setPersonState] = useState({persons});
+const swichNameHandler = (isName) => {
+  persons[0].name = isName;
+  setPersonState({
+    persons
+  })
+  console.log(personState.persons);
+  console.log("Changed but not updating");
+}
 
   return (
     <div className="App">
